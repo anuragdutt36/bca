@@ -1,0 +1,1165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#2c1f159c, #2c1f159c), url(img/Untitled\ design\ \(1\).jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 50px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li :hover::after {
+    width: 100%;
+
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #2c1f15f7;
+    background: #2c1f15f7;
+    transition: 0.5s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+
+    .logo {
+        position: absolute;
+        right: 41%;
+        top: 5%;
+    }
+
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #3a2618;
+        height: 57vh;
+        width: 160px;
+        top: 0;
+        right: -160px;
+        text-align: center;
+        z-index: 2;
+        transition: 0.5s;
+        border-bottom-left-radius: 15%;
+    }
+
+    .nav-links ul li a {
+        display: inline-flex;
+        text-decoration: none;
+        color: white;
+        padding: 12px;
+        font-size: 13px;
+        position: relative;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    .nav-links ul li a:hover {
+        border: 1px solid #f8f8fd;
+        background: #f8f8fd;
+        transition: 0.9s;
+        color: black;
+    }
+
+
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin-right: -100px;
+        margin-top: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 10px;
+    }
+}
+
+/* Details */
+.details {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 120px;
+}
+
+.details h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.details p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    transition: 0.5s;
+}
+
+table:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table td {
+    text-align: left;
+    padding: 10px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f8f8fd;
+}
+
+.topic td {
+    background-color: #3a2618;
+}
+
+.topic td p {
+    color: white;
+}
+
+.details tbody tr td ul li {
+    list-style: none;
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    padding: 1px;
+}
+
+tbody tr td ul li a {
+    text-decoration: none;
+}
+
+tbody tr td ul li ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #6b4b2d;
+    display: block;
+    margin-right: 50%;
+    transition: 0.5s;
+}
+
+tbody tr td ul li :hover::after {
+    width: 6%;
+}
+
+/* Types of BCA */
+.types-background {
+    background-color: #f8f8fd;
+    position: relative;
+}
+
+.types {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.types h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.types p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.types-col1 {
+    flex-basis: 31%;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.types-col2 {
+    flex-basis: 31%;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.types-col3 {
+    flex-basis: 31%;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.row .types-col1:hover p {
+    color: transparent;
+}
+
+.row .types-col2:hover p {
+    color: transparent;
+}
+
+.row .types-col3:hover p {
+    color: transparent;
+}
+
+.types-col1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    background-image: linear-gradient(#2c1f159c, #2c1f159c), url(https://s3-ap-southeast-1.amazonaws.com/blog-edukasyon/wp-content/uploads/2018/10/04095835/2-3-idiots-768x430.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.types-col2:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    background-image: linear-gradient(#2c1f159c, #2c1f159c), url(https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/04/02/15858495044223.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.types-col3:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    background-image: linear-gradient(#2c1f159c, #2c1f159c), url(https://climb.pcc.edu/hs-fs/hubfs/remote%20learning.jpg?width=724&name=remote%20learning.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Colleges */
+
+.colleges {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.colleges h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.colleges p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.colleges-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.colleges-col:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.colleges-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.layer1,
+.layer2,
+.layer3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.layer1:hover {
+    background: rgba(221, 149, 93, 0.7);
+
+}
+
+.layer2:hover {
+    background: rgba(163, 161, 24, 0.7);
+}
+
+.layer3:hover {
+    background: rgba(155, 91, 89, 0.7);
+
+}
+
+.layer1 h1 {
+    color: transparent;
+    line-height: 40px;
+    padding: 99px 50px;
+    transition: 1s;
+}
+
+.layer2 h1 {
+    color: transparent;
+    line-height: 40px;
+    padding: 80px 40px;
+    transition: 1s;
+}
+
+.layer3 h1 {
+    color: transparent;
+    line-height: 40px;
+    padding: 80px 70px;
+    transition: 1s;
+}
+
+.layer1 h1:hover,
+.layer2 h1:hover,
+.layer3 h1:hover {
+    color: white;
+}
+
+.layer4,
+.layer5,
+.layer6 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.layer4:hover {
+    background: rgba(153, 125, 66, 0.7);
+
+}
+
+.layer5:hover {
+    background: rgba(140, 98, 106, 0.7);
+}
+
+.layer6:hover {
+    background: rgba(32, 128, 130, 0.7);
+
+}
+
+.layer4 h1 {
+    color: transparent;
+    line-height: 40px;
+    padding: 95px 10px;
+    transition: 1s;
+}
+
+.layer5 h1 {
+    color: transparent;
+    line-height: 40px;
+    padding: 55px 40px;
+    transition: 1s;
+}
+
+.layer6 h1 {
+    color: transparent;
+    line-height: 40px;
+    padding: 70px 70px;
+    transition: 1s;
+}
+
+.layer4 h1:hover,
+.layer5 h1:hover,
+.layer6 h1:hover {
+    color: white;
+}
+
+.layer7,
+.layer8,
+.layer9 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.layer7:hover {
+    background: rgba(146, 136, 115, 0.7);
+
+}
+
+.layer8:hover {
+    background: rgba(13, 66, 108, 0.7);
+}
+
+.layer9:hover {
+    background: rgba(148, 134, 113, 0.7);
+
+}
+
+.layer7 h1 {
+    color: transparent;
+    line-height: 40px;
+    padding: 80px 70px;
+    transition: 1s;
+}
+
+.layer8 h1 {
+    color: transparent;
+    line-height: 40px;
+    padding: 43px 40px;
+    transition: 1s;
+}
+
+.layer9 h1 {
+    color: transparent;
+    line-height: 40px;
+    padding: 25px 30px;
+    transition: 1s;
+}
+
+.layer7 h1:hover,
+.layer8 h1:hover,
+.layer9 h1:hover {
+    color: white;
+}
+
+@media(max-width:700px) {
+    .colleges {
+        width: 85%;
+        height: 100%;
+    }
+
+    .layer1 h1 {
+        line-height: 35px;
+        padding: 30px 30px;
+        font-weight: 300;
+    }
+
+    .layer2 h1 {
+        line-height: 32px;
+        padding: 30px 10px;
+        font-weight: 300;
+        font-size: 30px;
+    }
+
+    .layer3 h1 {
+        line-height: 39px;
+        padding: 40px 40px;
+        font-weight: 300;
+    }
+
+    .layer4 h1 {
+        line-height: 40px;
+        font-weight: 300;
+        padding: 30px 40px;
+    }
+
+    .layer5 h1 {
+        line-height: 30px;
+        font-weight: 300;
+        font-size: 25px;
+        padding: 18px 3px;
+    }
+
+    .layer6 h1 {
+        line-height: 40px;
+        font-weight: 300;
+        padding: 12px 20px;
+        font-size: 31px;
+    }
+
+    .layer7 h1 {
+        line-height: 40px;
+        font-weight: 300;
+        padding: 25px 20px;
+        font-size: 35px;
+
+    }
+
+    .layer8 h1 {
+        line-height: 32px;
+        font-weight: 300;
+        padding: 16px 30px;
+        font-size: 25px;
+    }
+
+    .layer9 h1 {
+        line-height: 30px;
+        font-weight: 300;
+        padding: 20px 10px;
+        font-size: 24px;
+    }
+}
+
+/* BCA Entrance Examination */
+
+/* I take same name class of Details */
+.fees-background {
+    background-color: #f8f8fd;
+    position: relative;
+}
+
+.fees {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 120px;
+}
+
+.fees h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.fees p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fees table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.private h3 {
+    padding-bottom: 10px;
+    padding-top: 32px;
+    color: black;
+    text-align: left;
+}
+
+.govern h3 {
+    padding-bottom: 10px;
+    padding-top: 32px;
+    color: black;
+    text-align: left;
+}
+
+/* Testimonials */
+.testi {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.testi h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.testi-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s;
+}
+
+.testi-col:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.testi-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testi-col p {
+    padding: 0;
+    color: #777;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.testi-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testi-col .fa {
+    color: #f44336;
+}
+
+@media(max-width: 700px) {
+    .testi-col img {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/* FAQs */
+
+.faq-background {
+    background-color: #f8f8fd;
+    position: relative;
+}
+
+.faq {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.faq h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.hr-line {
+    width: 60%;
+    margin: auto;
+
+}
+
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    background-color: #3a2618;
+    color: #e8eaed;
+    cursor: pointer;
+    padding: 19px 19px;
+    width: 67%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.faq-body {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    padding: auto;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #f8f8fd;
+    font-weight: 600;
+    color: black;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    width: 60%;
+    padding: 0px 20px;
+    padding-bottom: 21px;
+    /* background-color: #d6faff; */
+    display: none;
+    overflow: hidden;
+    color: #736b65;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.faq-body p {
+    font-size: 12px;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 11px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+/* Call To Action */
+
+.call {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/jb_hbanner1.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    transition: 0.5s;
+}
+
+.call h1 {
+    color: #e8eaed;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 40px;
+}
+
+.call p {
+    color: #e8eaed;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 17px;
+}
+
+@media(max-width: 700px) {
+    .call h1 {
+        font-size: 24px;
+    }
+
+    .call p {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+
+/* Footer */
+.footer-background {
+    background-color: #14151a;
+    position: relative;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer h4 {
+    margin-bottom: 23px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: white;
+    font-size: large;
+}
+
+.footer p {
+    font-size: small;
+    color: #bfbfbf;
+    font-weight: 100;
+}
+
+.icons .fa {
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.fa-heart-o {
+    color: #f44336;
+}
+
+@media(max-width: 700px) {
+    .footer p {
+        padding: 20px;
+    }
+}
+
+
+
+
+/* --------------- About Us Page --------------- */
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(#2c1f159c, #2c1f159c), url(https://delco.today/wp-content/uploads/sites/3/2021/07/Remote-Worker-970x550.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1 {
+    margin-top: 100px;
+}
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-col h1 {
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+.about-col p {
+    padding-top: 15px 0 25px;
+    padding-bottom: 29px;
+    color: #999;
+}
+
+.red-btn {
+    border: 1px solid #2c1f15f7;
+    background: transparent;
+    color: #2c1f15f7;
+    text-align: right;
+}
+
+.red-btn:hover {
+    color: #fff;
+}
+
+@media(max-width:700px) {
+    .sub-header h1 {
+        padding-top: 78px;
+        margin: 50px;
+    }
+}
+
+/* -----contact us page---------- */
+.contact-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(#2c1f159c, #2c1f159c), url(https://www.politicmag.net/wp-content/uploads/2020/12/People-buying-second-hand-phones-more-vulnerable-to-being-hacked-security-experts-warn-UK-News-Reports.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-header h1 {
+    margin-top: 100px;
+}
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+
+.location iframe {
+    width: 100%;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.contact-col {
+    flex-basis: 49%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+    font-size: 28px;
+    color: #2c1f15f7;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+@media(max-width:700px) {
+    .contact-header h1 {
+        padding-top: 78px;
+        margin: 50px;
+    }
+}
+
+/* ----blog-content--------- */
+.blog-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(#2c1f159c, #2c1f159c), url(https://www.jbs.cam.ac.uk/wp-content/uploads/2020/08/2016-how-to-apply-883x432-1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.blog-header h1 {
+    margin-top: 100px;
+
+}
+
+.blog-content {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.blog-left {
+    flex-basis: 65%;
+}
+
+.blog-left img {
+    width: 100%;
+}
+
+.blog-left h2 {
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.blog-left {
+    color: #999;
+    padding: 0;
+}
+
+.blog-right {
+    flex-basis: 32%
+}
+
+.blog-right h3 {
+    background-color: #3a2618;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.comment-box {
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 15px 20px;
+}
+
+.comment-box h3 {
+    text-align: left;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.comment-form button {
+    margin: 10px 0;
+}
+
+@media(max-width:700px) {
+    .blog-header h1 {
+        padding-top: 78px;
+        margin: 50px;
+    }
+
+    .blog-content h1 {
+        font-size: 20px;
+    }
+}
+
+.ignou-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(#2c1f159c, #2c1f159c), url(https://chandigarhmetro.com/wp-content/uploads/2017/07/505917-ignou-admission-e1500550610444.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-header h1 {
+    margin-top: 100px;
+}
